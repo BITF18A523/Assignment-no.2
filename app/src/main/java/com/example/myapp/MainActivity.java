@@ -77,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
             }
 
         };
+        b1.setOnClickListener(l);
+        b2.setOnClickListener(l);
+        b3.setOnClickListener(l);
+        b4.setOnClickListener(l);
+        b5.setOnClickListener(l);
+        b6.setOnClickListener(l);
+        b7.setOnClickListener(l);
+        b8.setOnClickListener(l);
+        b9.setOnClickListener(l);
+        b10.setOnClickListener(l);
 
 
 
