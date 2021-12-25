@@ -37,6 +37,47 @@ public class MainActivity extends AppCompatActivity {
         b9= (Button) findViewById(R.id.Brown);
         b10  = (Button) findViewById(R.id.Orange);
         setSupportActionBar(toolbar);
+        final MediaPlayer mp1= MediaPlayer.create(getApplicationContext(), R.raw.red);
+        final MediaPlayer mp2= MediaPlayer.create(getApplicationContext(), R.raw.blue);
+        final MediaPlayer mp3= MediaPlayer.create(getApplicationContext(), R.raw.green);
+        final MediaPlayer mp4= MediaPlayer.create(getApplicationContext(), R.raw.purple);
+        final MediaPlayer mp5= MediaPlayer.create(getApplicationContext(), R.raw.black);
+        final MediaPlayer mp6= MediaPlayer.create(getApplicationContext(), R.raw.orange);
+        final MediaPlayer mp7= MediaPlayer.create(getApplicationContext(), R.raw.pink);
+        final MediaPlayer mp8= MediaPlayer.create(getApplicationContext(), R.raw.brown);
+        final MediaPlayer mp9= MediaPlayer.create(getApplicationContext(), R.raw.yellow);
+        final MediaPlayer mp10= MediaPlayer.create(getApplicationContext(), R.raw.grey);
+
+        View.OnClickListener l = new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if(v.getId()==R.id.Orange)
+                    mp6.start();
+                else if(v.getId()==R.id.Red)
+                    mp1.start();
+                else if(v.getId()==R.id.Blue)
+                    mp2.start();
+                else if(v.getId()==R.id.Yellow)
+                    mp9.start();
+                else if(v.getId()==R.id.Pink)
+                    mp7.start();
+                else if(v.getId()==R.id.Brown)
+                    mp8.start();
+                else if(v.getId()==R.id.Grey)
+                    mp10.start();
+                else if(v.getId()==R.id.Black)
+                    mp5.start();
+                else if(v.getId()==R.id.Purple)
+                    mp4.start();
+                else if(v.getId()==R.id.Green)
+                    mp3.start();
+
+            }
+
+        };
+
 
 
 }}
