@@ -4,31 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#D5D2B9"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter the alphabet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbar" />
+    <Button
+        android:id="@+id/Pink"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#ED4A82"
+        android:text="Pink"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toBottomOf="@+id/Grey"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Yellow"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Pink"
+        app:layout_constraintTop_toBottomOf="@+id/Brown"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/Green"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Red"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/Blue"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Red" />
+
+    <Button
+        android:id="@+id/Black"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Blue"
+        app:layout_constraintTop_toBottomOf="@+id/Green" />
+
+    <Button
+        android:id="@+id/Purple"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="Purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Blue" />
+
+    <Button
+        android:id="@+id/Orange"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FF5722"
+        android:text="Orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Purple"
+        app:layout_constraintTop_toBottomOf="@+id/Black" />
+
+    <EditText
+        android:id="@+id/app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check its nature"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        android:text="Colour Recognition App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#010E0D"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Grey"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Grey"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204" />
+        app:layout_constraintTop_toBottomOf="@+id/Purple" />
+
+    <Button
+        android:id="@+id/Brown"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#604137"
+        android:text="Brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Grey"
+        app:layout_constraintTop_toBottomOf="@+id/Orange" />
 </androidx.constraintlayout.widget.ConstraintLayout>
